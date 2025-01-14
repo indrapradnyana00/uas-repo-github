@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <!-- Link to external CSS file -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="alamB.jpg" alt="Gambar 1" width="400px" height="300px">
+            <img src="alamK.jpg" alt="Gambar 2" width="400px" height="300px">
+            <img src="alamP.jpg" alt="Gambar 3" width="400px" height="300px">
+        </div>
+    </div>
+
+    <!-- Buttons and Display Area -->
+    <table>
+        <tr>
+          <td rowspan="3" style="text-align: center; border-radius: 15px;" height="350px" width="200px">
+                <button class="btn" onclick="goHome()" id="HOME"> HOME</button>
+                <button class="btn" onclick="showImage('INSTIKI.webp', 'INSTITUT BISNIS & TEKNOLOGI INDONESIA')">EDUCATION</button>
+                <button class="btn" onclick="showFamily()">FAMILY</button>
+                <button class="btn" onclick="showImage('myprof (1).png', 'Nama: I Gusti Ngurah Indra Pradnyana')">ABOUT</button>
+            </td>
+            <td id="display-area">
+                <h1>Get started!</h1>
+                <p>Click Education, Family, or About to see more information.</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
